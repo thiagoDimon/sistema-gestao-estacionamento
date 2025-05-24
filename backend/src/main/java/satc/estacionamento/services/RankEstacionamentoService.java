@@ -52,7 +52,8 @@ public class RankEstacionamentoService {
                     .placa(veiculo.getPlaca())
                     .valor(valor)
                     .build();
-        }).sorted(Comparator.comparingLong(RelatorioReservaDTO::getTempoDecorridoTotal).reversed()).collect(Collectors.toList());
+        }).sorted(Comparator.comparingLong(RelatorioReservaDTO::getTempoDecorridoTotal).reversed())
+            .collect(Collectors.toList());
 
         AtomicLong counter = new AtomicLong(1);
         relatorio.forEach(dto -> dto.setRank(counter.getAndIncrement()));
