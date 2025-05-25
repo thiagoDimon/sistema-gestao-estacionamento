@@ -48,8 +48,8 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          organization: thiagodimon
-          projectKey: thiagoDimon_sistema-gestao-estacionamento
-          projectName: Backend Estacionamento
+          args: >
+            -Dsonar.projectKey=thiagoDimon_sistema-gestao-estacionamento
+            -Dsonar.organization=thiagodimon
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
