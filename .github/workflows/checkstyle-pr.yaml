@@ -48,7 +48,7 @@ jobs:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@master
         with:
-          organization: thiagoDimon
+          organization: thiagodimon
           projectKey: thiagoDimon_sistema-gestao-estacionamento
           projectName: Backend Estacionamento
         env:
