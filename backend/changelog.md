@@ -1,4 +1,4 @@
-## Commit 10/05 
+## Commit 10/05
 > Foi finalizado o ajuste nos controllers:
 - `ClienteController`
 - `EstacionamentoController`
@@ -22,3 +22,6 @@ Alterado o `TarifaReservaController` para dentro do `TarifaController`
 Alterado o `VeiculosEstacionadosController` para dentro do `VeiculosController`
 
 Removido a pasta getMapping e trazendo os metodos para dentro da pasta controller
+
+## Commit 25/05
+Criado testes com mais de 50% de coverage e feito a inserção no sonarqube junto com a atualização da pipeline para rodar os testes e enviar para o sonarqube
