@@ -1,24 +1,35 @@
-## Commit 10/05 
-> Foi finalizado o ajuste nos controllers:
-- `ClienteController`
-- `EstacionamentoController`
-- `ReservaController`
-- `TarifaController`
-- `VeiculoController`
+# Changelog
+Este documento registra todas as alterações significativas realizadas no projeto **Sistema Gestão Estacionamento** a partir da data 10/05/2025.
 
-> Ainda está restando o ajuste nos controllers:
-- `RankEstacionamentoController` (adicionar chamada dentro do arquivo `EstacionamentoController`)
-- `TarifaReservaController` (adicionar chamada dentro do arquivo `TarifaController`)
-- `VeiculosEstacionadosController` (adicionar chamada dentro do arquivo `VeiculosController`)
-- Não foi realizado nada ainda na pasta getMapping, tudo o que possui lá deve ser migrado para dentro da pasta `controller`
+## [1] - 10/05/2025
+### 🚀 Adicionado
+- Modularização da estrutura do backend para melhorar a organização de pastas e código.
 
-> Foi realizado a criação dos services para separação de responsabilidade
+### 🛠️ Modificado
+- Refatoração da pasta `controllers` para receber apenas solicitações *REST*.
+- Refatoração das regras de negócios para a cada `service`.
+- Refatoração de métodos complexos para tornar o código mais légivel e de fácil manutenção.
+- Alteração do `repository` conforme necessidade da lógica implementada.
 
-> Foi alterado os respositorys conforme a necessidade da lógica implementada
+## [2] - 18/05/2025
+### 🛠️ Modificado
+- Alterado o `RankEstacionamentoController` para dentro do `EstacionamentoController`.
+- Alterado o `TarifaReservaController` para dentro do `TarifaController`.
+- Alterado o `VeiculosEstacionadosController` para dentro do `VeiculosController`.
+- Refatoração da pasta `getMapping` de solicitações *REST* para dentro da pasta `controllers`.
 
-## Commit 18/05
-Alterado o `RankEstacionamentoController` para dentro do `EstacionamentoController`
-Alterado o `TarifaReservaController` para dentro do `TarifaController`
-Alterado o `VeiculosEstacionadosController` para dentro do `VeiculosController`
+### 🗑️ Removido
+- Removido a pasta `getMapping`.
 
-Removido a pasta getMapping e trazendo os metodos para dentro da pasta controller
+## [3] - 20/05/2025 e 21/05/2025
+### 🚀 Adicionado
+- Configuração do *checkstyle* para arquivos java.
+- Integração de verificação de padrões utilizados ao solicitar um **pull request**.
+
+## [4] - 23/05/2025
+### 🚀 Adicionado
+- Configuração do **swagger** para documentação das APIs.
+- Conteinerização do **SonarQube** para análise e qualidade do código.
+- Documentação de como iniciar o **SonarQube** e realizar a análise do projeto.
+
+## [5] - 26/05/2025
