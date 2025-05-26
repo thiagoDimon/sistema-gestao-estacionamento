@@ -24,7 +24,7 @@ Este documento tem como objetivo apresentar os **principais problemas detectados
 - Uso de indentação via tab, em vez da convenção recomendada (espaços)
 - Controllers acessam diretamente a lógica de dados, violando o princípio de separação de responsabilidades
 - Injeções de dependência diretas de `Jdbc` e `Repository` nos controllers
-- Métodos `REST` retornando diretamente o objeto em vez do código `http` e objeto no `body` 
+- Métodos `REST` retornando diretamente o objeto em vez do código `http` e objeto no `body`
 - Ausência de uso de `@ControllerAdvice` para captura e tratamento centralizado de exceções
 
 ---
@@ -78,4 +78,13 @@ Este documento tem como objetivo apresentar os **principais problemas detectados
 - [ ] Começo da padronização de nomes
 - [ ] Configuração do SonarLint aplicada
 > Todas as alterações realizadas podem ser consultadas no arquivo `changelog.md`
+
 ---
+
+## 📚 Documentação Adicional
+
+Consulte os seguintes documentos para mais informações:
+
+- **[Inicialização e Execução do Projeto](./initialize.md)**: Instruções sobre como configurar e rodar o projeto.
+- **[Changelog](./changelog.md)**: Registro detalhado de todas as alterações realizadas no projeto.
+- **[Configuração do SonarQube Local](./sonarqube.md)**: Guia para configurar e executar o SonarQube localmente para análise de código.

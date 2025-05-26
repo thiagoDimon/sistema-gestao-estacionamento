@@ -19,7 +19,7 @@ Este documento registra todas as alterações significativas realizadas no proje
 ## [1.1] - 18/05/2025
 
 ### 🚀 Adicionado
-- Interface fluente para construção de objetos.
+- Interface fluente para construção de objetos em todos os arquivos da pasta DTO.
 
 ### 🛠️ Modificado
 - `RankEstacionamentoController` incorporado ao `EstacionamentoController`.
