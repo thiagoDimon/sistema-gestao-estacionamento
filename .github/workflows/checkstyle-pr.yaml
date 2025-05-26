@@ -67,4 +67,4 @@ jobs:
       - name: Build and Analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./mvnw -B clean verify compile sonar:sonar -Dsonar.projectKey=thiagoDimon_sistema-gestao-estacionamento -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.java.binaries=target/classes
+        run: ./mvnw -B clean verify compile sonar:sonar -Dsonar.sources=src/main/java -Dsonar.projectKey=thiagoDimon_sistema-gestao-estacionamento -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.java.binaries=target/classes/satc
