@@ -32,5 +32,4 @@ public class BlocoService {
         blocoRepository.deleteById(id);
     }
 
-//    public List<Bloco> listar
 }
