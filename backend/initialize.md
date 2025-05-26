@@ -73,13 +73,13 @@
 ### Build do Projeto
 
 ```bash
-mvn clean install
+./mvnw clean install
 ```
 
 ### Rodar a Aplicação
 
 ```bash
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ---
@@ -87,7 +87,7 @@ mvn spring-boot:run
 ## ✅ Rodando Testes Unitários
 
 ```bash
-mvn test
+./mvnw test
 ```
 
 ---
@@ -97,7 +97,7 @@ mvn test
 Verifica se o código está conforme as regras de estilo:
 
 ```bash
-mvn checkstyle:check
+./mvnw checkstyle:check
 ```
 
 > Certifique-se de que o `checkstyle.xml` está corretamente configurado no `pom.xml` ou em `config/checkstyle/checkstyle.xml`.
@@ -180,10 +180,10 @@ Caso esteja usando outra porta (ex: 8080), atualize o endereço do Swagger para 
 cd docker/ && docker-compose up -d && cd ..
 
 # Rodar testes e checkstyle
-mvn clean verify checkstyle:check
+./mvnw clean verify checkstyle:check
 
 # Rodar aplicação
-mvn spring-boot:run
+./mvnw spring-boot:run
 ```
 
 ---
