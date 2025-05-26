@@ -65,12 +65,8 @@ jobs:
           key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
           restore-keys: ${{ runner.os }}-m2
       - name: Build and run tests (gerar relatório Jacoco)
-        run: ./mvnw clean verify
-      - name: Verificar se relatório Jacoco foi gerado
-        run: |
-           echo "Conteúdo da pasta target/site/jacoco:"
-           ls -la target/site/jacoco
+        run: ./mvnw clean verify compile
       - name: Build and Analyze
         env:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
-        run: ./mvnw -B clean verify compile sonar:sonar -Dsonar.projectKey=thiagoDimon_sistema-gestao-estacionamento -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.java.binaries=target/classes
+        run: ./mvnw sonar:sonar -Dsonar.projectKey=thiagoDimon_sistema-gestao-estacionamento -Dsonar.coverage.jacoco.xmlReportPaths=target/site/jacoco/jacoco.xml -Dsonar.java.binaries=target/classes
