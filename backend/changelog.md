@@ -10,6 +10,7 @@ Este documento registra todas as alterações significativas realizadas no proje
 - Refatoração das regras de negócios para a cada `service`.
 - Refatoração de métodos complexos para tornar o código mais légivel e de fácil manutenção.
 - Alteração do `repository` conforme necessidade da lógica implementada.
+- Nomenclatura de variáveis e métodos para legibilidade.
 
 ## [2] - 18/05/2025
 ### 🛠️ Modificado
@@ -17,6 +18,7 @@ Este documento registra todas as alterações significativas realizadas no proje
 - Alterado o `TarifaReservaController` para dentro do `TarifaController`.
 - Alterado o `VeiculosEstacionadosController` para dentro do `VeiculosController`.
 - Refatoração da pasta `getMapping` de solicitações *REST* para dentro da pasta `controllers`.
+- Refatoração do método de **ranking** para ligibilidade.
 
 ### 🗑️ Removido
 - Removido a pasta `getMapping`.
