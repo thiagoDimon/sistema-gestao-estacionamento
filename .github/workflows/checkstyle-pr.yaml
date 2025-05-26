@@ -50,8 +50,8 @@ jobs:
           distribution: temurin
           java-version: 17
 
-      - name: Compile project
-        run: ./mvnw compile
+      - name: Compila Projeto
+        run: ./mvnw compile sonar:sonar
 
       - name: Sonar Cloud Scan
         uses: SonarSource/sonarcloud-github-action@master
